@@ -40,12 +40,25 @@ while svar == "já":
             print("Varamenn:",afgangsFjoldi)
 
     if val == 2:
-        pass
-        talaNotanda = int(input("Sláðu inn tölu sem þú villt:")) #5
+        keyra = "ja"
+        while keyra == "ja":
+            talaNotanda = int(input("Sláðu inn tölu sem þú villt:")) #5
+            teljari = 0
 
-
-        for x in range(1, talaNotanda+1, 1):
-            print(x)
+            if talaNotanda <= -1:
+                for x in range(-1, talaNotanda-1,-1):
+                    print("(",x,")" ,end="")
+                    print("+",end="")
+                    teljari = teljari - x
+                print("=",- teljari, end="")
+            elif talaNotanda == 0:
+                break
+            else:
+                for x in range(1, talaNotanda + 1):
+                    print(x, end="")
+                    print(" + ", end="")
+                    teljari = teljari + x
+                print("=", teljari, end="")
 
 
     if val == 3:
