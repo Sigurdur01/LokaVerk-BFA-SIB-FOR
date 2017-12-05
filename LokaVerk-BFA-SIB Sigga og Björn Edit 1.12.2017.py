@@ -285,17 +285,20 @@ while svar == "já":
             print("Hærðu nú þú verður að hreyfa þig meira", nafnNotanda)
 
     if val == 8:
+        #Hér eru listarnir sem við add-um inn allar tölurnar
         listiTeningarKastL8 = []
         listiFyrirSummurL8 = []
 
         heildarSummaListans = 0
 
+        #Hér eru teljarar fyrir summu kasta 10, 15 og 18
         teljariFyrir10L8 = 0
         teljariFyrir15L8 = 0
         teljariFyrir18L8 = 0
 
 
         for x in range(201):
+            #Hér eru random teningar sem eru kastaðir 200 sinnum
             randomTeningarKastL8_1 = random.randint(1,6)
             randomTeningarKastL8_2 = random.randint(1,6)
             randomTeningarKastL8_3 = random.randint(1,6)
@@ -303,18 +306,23 @@ while svar == "já":
             summaAllraTalnaL8 = randomTeningarKastL8_1 + randomTeningarKastL8_2 + randomTeningarKastL8_3
             heildarSummaListans = heildarSummaListans + summaAllraTalnaL8
 
+            #Hér er birt öll random köstin
             print("Kast teningur 1 =", randomTeningarKastL8_1)
             print("Kast teningur 2 =", randomTeningarKastL8_2)
             print("Kast teningur 3 =", randomTeningarKastL8_3)
 
+            #Hér er birt summu kastana
             print("Samtals",summaAllraTalnaL8)
 
+            #Hér er sett summu allra kastana í lista
             listiFyrirSummurL8.append(summaAllraTalnaL8)
 
+            #Hér er sett random köstin í lista
             listiTeningarKastL8.append(randomTeningarKastL8_1)
             listiTeningarKastL8.append(randomTeningarKastL8_2)
             listiTeningarKastL8.append(randomTeningarKastL8_3)
 
+            #Hér er kýkt hvort að summan 10, 15 eða 18
             if heildarSummaListans == 10:
                 teljariFyrir10L8 = teljariFyrir10L8 + 1
             if heildarSummaListans == 15:
@@ -324,26 +332,32 @@ while svar == "já":
 
             print("------------------")
 
+        #Hér birt listan óraðaðan með því að birta beint
         print("Hér er listinn óraðaður:")
         print(listiTeningarKastL8)
 
         print("------------------")
 
+        #Hér raðaðlistanum
         listiTeningarKastL8.sort()
+        #Hér er printað raðaðum lista með teningar köstunum
         print("Hér er listinn raðaður:")
         print(listiTeningarKastL8)
 
         print("------------------")
-
+        
+        #Hér er birt summu listans
         print("Hér er heildarsumma listans:", heildarSummaListans)
 
         print("------------------")
-
+        
+        #Hér fundið meðaltal talnana
         medaltalL8 = heildarSummaListans / 200
         print("Þetta er meðaltal kastanna", medaltalL8)
 
         print("------------------")
 
+        #Hér er birt öllum 10, 15 og 18
         print("Kastað var uppá 10", teljariFyrir10L8, "sinnum")
         print("Kastað var uppá 15", teljariFyrir15L8, "sinnum")
         print("Kastað var uppá 18", teljariFyrir18L8, "sinnum")
@@ -363,11 +377,13 @@ while svar == "já":
 
         print("------------------")
 
+        #Hér er spurt um innsláningu frá notanda
         valL9 = input("Hvað byggingu langar þér að læra um?:")
 
         if valL9 == "1":
             print("------------------")
-
+            
+            #Hér er prentað út Hallgrímskyrkju
             print("Heimilsfang byggingar:  ",stadsetning[0])
             print("Arkitekt:               ",arkitektar[0])
             print("Byggingarár:            ",byggingarAr[0])
@@ -375,12 +391,15 @@ while svar == "já":
         elif valL9 == "2":
             print("------------------")
 
+            #Hér er prentað út kjarvalsstaði
             print("Heimilsfang byggingar:  ",stadsetning[1])
             print("Arkitekt:               ",arkitektar[1])
             print("Byggingarár:            ",byggingarAr[1])
         else:
+            #Hér er ef það er slegið inn of háa tölu eða ekki tölu
             print("Villa!")
 
     if val == 10:
+        #Hér er til að stoppa forritið of enda while loppið
         print("Okey takk fyrir að not forritið okkar")
         break
