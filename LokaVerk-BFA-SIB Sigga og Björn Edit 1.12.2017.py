@@ -199,7 +199,7 @@ while svar == "já":
 
             #Hér er bætt inní listan allar heiltöluran
             heiltoluListi.append(tolurNotanda)
-            #Hér minnkað í teljarann
+            #Hér er minnkað í teljarann
             teljari = teljari - 1
 
         #Hér er verið að reikna meðaltal talnana
@@ -209,7 +209,7 @@ while svar == "já":
         print("Summa allra talnanna:", summa)
         #Hér er prentað minnstu töluna
         print("Minnsta talan:", min(heiltoluListi))
-        #Hér er prentað hæðastu töluna
+        #Hér er prentað hæðstu töluna
         print("Hæðsta talan:", max(heiltoluListi))
         #Hér er prentað meðaltalið
         print("Meðaltal talnanna:", medaltal)
@@ -269,12 +269,12 @@ while svar == "já":
         #Hér er deilt þyngd með hæð í öðru veldi
         bmiutkommaNotanda = þyngdNotanda/bmiHaedNotanda
 
-        #Hér er breytt töluni til að bara hafa tvo aukastafi
+        #Hér er breytt tölunni til að bara hafa tvo aukastafi
         tveirstafitBIMUtkomma = round(bmiutkommaNotanda, 2)
 
         print("BMI stuðull þinn er", tveirstafitBIMUtkomma)
 
-        #Hér er séð hvað BMI stuðullin þinn er við inna áhvaða marka
+        #Hér er séð hvað BMI stuðullin þinn er við inna ákvaða marka
         if tveirstafitBIMUtkomma < 18.5:
             print("Hærðu þú verður að borða einhvað því þetta er Vannæring", nafnNotanda)
         elif tveirstafitBIMUtkomma > 18.5 and tveirstafitBIMUtkomma < 24.99:
@@ -291,7 +291,7 @@ while svar == "já":
 
         heildarSummaListans = 0
 
-        #Hér eru teljarar fyrir summu kasta 10, 15 og 18
+        #Hér eru teljarar fyrir ákveðna summu kasta 10, 15 og 18
         teljariFyrir10L8 = 0
         teljariFyrir15L8 = 0
         teljariFyrir18L8 = 0
